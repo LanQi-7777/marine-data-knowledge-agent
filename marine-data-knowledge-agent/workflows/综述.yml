@@ -1,0 +1,1230 @@
+app:
+  description: ''
+  icon: 🤖
+  icon_background: '#FFEAD5'
+  mode: workflow
+  name: 综述
+  use_icon_as_answer_icon: false
+dependencies:
+- current_identifier: null
+  type: marketplace
+  value:
+    marketplace_plugin_unique_identifier: langgenius/ollama:0.0.5@cc38c90a58d4b4e43c9a821d352829b2c2a8d6d742de9fec9e61e6b34865b496
+kind: app
+version: 0.1.5
+workflow:
+  conversation_variables: []
+  environment_variables: []
+  features:
+    file_upload:
+      allowed_file_extensions:
+      - .JPG
+      - .JPEG
+      - .PNG
+      - .GIF
+      - .WEBP
+      - .SVG
+      allowed_file_types:
+      - image
+      allowed_file_upload_methods:
+      - local_file
+      - remote_url
+      enabled: false
+      fileUploadConfig:
+        audio_file_size_limit: 50
+        batch_count_limit: 500
+        file_size_limit: 1024
+        image_file_size_limit: 10
+        video_file_size_limit: 100
+        workflow_file_upload_limit: 10
+      image:
+        enabled: false
+        number_limits: 3
+        transfer_methods:
+        - local_file
+        - remote_url
+      number_limits: 3
+    opening_statement: ''
+    retriever_resource:
+      enabled: true
+    sensitive_word_avoidance:
+      enabled: false
+    speech_to_text:
+      enabled: false
+    suggested_questions: []
+    suggested_questions_after_answer:
+      enabled: false
+    text_to_speech:
+      enabled: false
+      language: ''
+      voice: ''
+  graph:
+    edges:
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: llm
+        targetType: knowledge-retrieval
+      id: 1745812611089-source-1745378704437-target
+      selected: false
+      source: '1745812611089'
+      sourceHandle: source
+      target: '1745378704437'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: llm
+        targetType: knowledge-retrieval
+      id: 1745812611089-source-1745898320855-target
+      selected: false
+      source: '1745812611089'
+      sourceHandle: source
+      target: '1745898320855'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: llm
+        targetType: knowledge-retrieval
+      id: 1745812611089-source-1745898322992-target
+      selected: false
+      source: '1745812611089'
+      sourceHandle: source
+      target: '1745898322992'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: llm
+        targetType: knowledge-retrieval
+      id: 1745812611089-source-1745898325566-target
+      selected: false
+      source: '1745812611089'
+      sourceHandle: source
+      target: '1745898325566'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: llm
+        targetType: knowledge-retrieval
+      id: 1745812611089-source-1745898327761-target
+      selected: false
+      source: '1745812611089'
+      sourceHandle: source
+      target: '1745898327761'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: llm
+        targetType: knowledge-retrieval
+      id: 1745812611089-source-1745898329670-target
+      selected: false
+      source: '1745812611089'
+      sourceHandle: source
+      target: '1745898329670'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: llm
+        targetType: knowledge-retrieval
+      id: 1745812611089-source-1745898332111-target
+      selected: false
+      source: '1745812611089'
+      sourceHandle: source
+      target: '1745898332111'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: knowledge-retrieval
+        targetType: llm
+      id: 1745378704437-source-1745898337553-target
+      selected: false
+      source: '1745378704437'
+      sourceHandle: source
+      target: '1745898337553'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: knowledge-retrieval
+        targetType: llm
+      id: 1745898320855-source-1745898345343-target
+      selected: false
+      source: '1745898320855'
+      sourceHandle: source
+      target: '1745898345343'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: knowledge-retrieval
+        targetType: llm
+      id: 1745898322992-source-1745898348600-target
+      selected: false
+      source: '1745898322992'
+      sourceHandle: source
+      target: '1745898348600'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: knowledge-retrieval
+        targetType: llm
+      id: 1745898325566-source-1745898351150-target
+      selected: false
+      source: '1745898325566'
+      sourceHandle: source
+      target: '1745898351150'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: knowledge-retrieval
+        targetType: llm
+      id: 1745898327761-source-1745898353168-target
+      selected: false
+      source: '1745898327761'
+      sourceHandle: source
+      target: '1745898353168'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: knowledge-retrieval
+        targetType: llm
+      id: 1745898329670-source-1745898355642-target
+      selected: false
+      source: '1745898329670'
+      sourceHandle: source
+      target: '1745898355642'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: knowledge-retrieval
+        targetType: llm
+      id: 1745898332111-source-1745898358606-target
+      selected: false
+      source: '1745898332111'
+      sourceHandle: source
+      target: '1745898358606'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: if-else
+        targetType: question-classifier
+      id: 1745898573569-true-1745917762874-target
+      selected: false
+      source: '1745898573569'
+      sourceHandle: 'true'
+      target: '1745917762874'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: question-classifier
+        targetType: llm
+      id: 1745917762874-1-1745812611089-target
+      selected: false
+      source: '1745917762874'
+      sourceHandle: '1'
+      target: '1745812611089'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: llm
+        targetType: llm
+      id: 1745898345343-source-1745917852328-target
+      selected: false
+      source: '1745898345343'
+      sourceHandle: source
+      target: '1745917852328'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: llm
+        targetType: llm
+      id: 1745898348600-source-1745917852328-target
+      selected: false
+      source: '1745898348600'
+      sourceHandle: source
+      target: '1745917852328'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: llm
+        targetType: llm
+      id: 1745898351150-source-1745917852328-target
+      selected: false
+      source: '1745898351150'
+      sourceHandle: source
+      target: '1745917852328'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: llm
+        targetType: llm
+      id: 1745898353168-source-1745917852328-target
+      selected: false
+      source: '1745898353168'
+      sourceHandle: source
+      target: '1745917852328'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: llm
+        targetType: llm
+      id: 1745898355642-source-1745917852328-target
+      selected: false
+      source: '1745898355642'
+      sourceHandle: source
+      target: '1745917852328'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: llm
+        targetType: llm
+      id: 1745898358606-source-1745917852328-target
+      selected: false
+      source: '1745898358606'
+      sourceHandle: source
+      target: '1745917852328'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: llm
+        targetType: end
+      id: 1745917852328-source-1745917875766-target
+      selected: false
+      source: '1745917852328'
+      sourceHandle: source
+      target: '1745917875766'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: start
+        targetType: if-else
+      id: 1745378695656-source-1745898573569-target
+      selected: false
+      source: '1745378695656'
+      sourceHandle: source
+      target: '1745898573569'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: knowledge-retrieval
+        targetType: llm
+      id: 1745378704437-source-1746009970448-target
+      selected: false
+      source: '1745378704437'
+      sourceHandle: source
+      target: '1746009970448'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: llm
+        targetType: llm
+      id: 1746009970448-source-1746009982242-target
+      selected: false
+      source: '1746009970448'
+      sourceHandle: source
+      target: '1746009982242'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: llm
+        targetType: llm
+      id: 1745898337553-source-1746009982242-target
+      selected: false
+      source: '1745898337553'
+      sourceHandle: source
+      target: '1746009982242'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: llm
+        targetType: llm
+      id: 1746009982242-source-1745917852328-target
+      selected: false
+      source: '1746009982242'
+      sourceHandle: source
+      target: '1745917852328'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: knowledge-retrieval
+        targetType: llm
+      id: 1745378704437-source-1746016021426-target
+      source: '1745378704437'
+      sourceHandle: source
+      target: '1746016021426'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: llm
+        targetType: llm
+      id: 1746016021426-source-1746009982242-target
+      source: '1746016021426'
+      sourceHandle: source
+      target: '1746009982242'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    nodes:
+    - data:
+        desc: ''
+        selected: false
+        title: 开始
+        type: start
+        variables: []
+      height: 54
+      id: '1745378695656'
+      position:
+        x: 665.0709406038196
+        y: -157.11597741916992
+      positionAbsolute:
+        x: 665.0709406038196
+        y: -157.11597741916992
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        dataset_ids:
+        - alIKxFCMOnnHmnFvoy4MhovkbQV1NfQ3gZh7UzFUenyFIccFa6APBnZOgBfAnOBR
+        desc: ''
+        multiple_retrieval_config:
+          reranking_enable: true
+          reranking_mode: weighted_score
+          top_k: 4
+          weights:
+            keyword_setting:
+              keyword_weight: 0.3
+            vector_setting:
+              embedding_model_name: bge-m3
+              embedding_provider_name: langgenius/ollama/ollama
+              vector_weight: 0.7
+        query_variable_selector: []
+        retrieval_mode: multiple
+        selected: false
+        title: 知识检索
+        type: knowledge-retrieval
+      height: 92
+      id: '1745378704437'
+      position:
+        x: 1346.5612049373588
+        y: -347.81393749974944
+      positionAbsolute:
+        x: 1346.5612049373588
+        y: -347.81393749974944
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        context:
+          enabled: false
+          variable_selector: []
+        desc: ''
+        model:
+          completion_params:
+            temperature: 0.7
+          mode: chat
+          name: qwq
+          provider: langgenius/ollama/ollama
+        prompt_template:
+        - id: 32e51c67-df21-417b-994d-c30e83b9ad95
+          role: system
+          text: ''
+        selected: false
+        title: LLM 3
+        type: llm
+        variables: []
+        vision:
+          enabled: false
+      height: 90
+      id: '1745812611089'
+      position:
+        x: 1018.8767528578264
+        y: 103.7737578178857
+      positionAbsolute:
+        x: 1018.8767528578264
+        y: 103.7737578178857
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        dataset_ids:
+        - alIKxFCMOnnHmnFvoy4MhovkbQV1NfQ3gZh7UzFUenyFIccFa6APBnZOgBfAnOBR
+        desc: ''
+        metadata_filtering_mode: automatic
+        metadata_model_config:
+          completion_params:
+            temperature: 0.7
+          mode: chat
+          name: qwq
+          provider: langgenius/ollama/ollama
+        multiple_retrieval_config:
+          reranking_enable: true
+          reranking_mode: weighted_score
+          top_k: 4
+          weights:
+            keyword_setting:
+              keyword_weight: 0.3
+            vector_setting:
+              embedding_model_name: bge-m3
+              embedding_provider_name: langgenius/ollama/ollama
+              vector_weight: 0.7
+        query_variable_selector: []
+        retrieval_mode: multiple
+        selected: true
+        title: 知识检索 2
+        type: knowledge-retrieval
+      height: 92
+      id: '1745898320855'
+      position:
+        x: 1377.2625233150839
+        y: -73.83642284294176
+      positionAbsolute:
+        x: 1377.2625233150839
+        y: -73.83642284294176
+      selected: true
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        dataset_ids:
+        - alIKxFCMOnnHmnFvoy4MhovkbQV1NfQ3gZh7UzFUenyFIccFa6APBnZOgBfAnOBR
+        desc: ''
+        metadata_filtering_mode: automatic
+        metadata_model_config:
+          completion_params:
+            temperature: 0.1
+          mode: chat
+          name: qwq
+          provider: langgenius/ollama/ollama
+        multiple_retrieval_config:
+          reranking_enable: true
+          reranking_mode: weighted_score
+          top_k: 4
+          weights:
+            keyword_setting:
+              keyword_weight: 0.3
+            vector_setting:
+              embedding_model_name: bge-m3
+              embedding_provider_name: langgenius/ollama/ollama
+              vector_weight: 0.7
+        query_variable_selector: []
+        retrieval_mode: multiple
+        selected: false
+        title: 知识检索 3
+        type: knowledge-retrieval
+      height: 92
+      id: '1745898322992'
+      position:
+        x: 1377.2625233150839
+        y: 155.87796571322974
+      positionAbsolute:
+        x: 1377.2625233150839
+        y: 155.87796571322974
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        dataset_ids:
+        - alIKxFCMOnnHmnFvoy4MhovkbQV1NfQ3gZh7UzFUenyFIccFa6APBnZOgBfAnOBR
+        desc: ''
+        multiple_retrieval_config:
+          reranking_enable: false
+          reranking_mode: weighted_score
+          top_k: 4
+          weights:
+            keyword_setting:
+              keyword_weight: 0.3
+            vector_setting:
+              embedding_model_name: bge-m3
+              embedding_provider_name: langgenius/ollama/ollama
+              vector_weight: 0.7
+        query_variable_selector: []
+        retrieval_mode: multiple
+        selected: false
+        title: 知识检索 4
+        type: knowledge-retrieval
+      height: 92
+      id: '1745898325566'
+      position:
+        x: 1370.5883236677523
+        y: 316.954802116011
+      positionAbsolute:
+        x: 1370.5883236677523
+        y: 316.954802116011
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        dataset_ids:
+        - alIKxFCMOnnHmnFvoy4MhovkbQV1NfQ3gZh7UzFUenyFIccFa6APBnZOgBfAnOBR
+        desc: ''
+        multiple_retrieval_config:
+          reranking_enable: true
+          reranking_mode: weighted_score
+          top_k: 4
+          weights:
+            keyword_setting:
+              keyword_weight: 0.3
+            vector_setting:
+              embedding_model_name: bge-m3
+              embedding_provider_name: langgenius/ollama/ollama
+              vector_weight: 0.7
+        query_variable_selector: []
+        retrieval_mode: multiple
+        selected: false
+        title: 知识检索 5
+        type: knowledge-retrieval
+      height: 92
+      id: '1745898327761'
+      position:
+        x: 1377.2625233150839
+        y: 459.3438795062642
+      positionAbsolute:
+        x: 1377.2625233150839
+        y: 459.3438795062642
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        dataset_ids:
+        - alIKxFCMOnnHmnFvoy4MhovkbQV1NfQ3gZh7UzFUenyFIccFa6APBnZOgBfAnOBR
+        desc: ''
+        multiple_retrieval_config:
+          reranking_enable: false
+          reranking_mode: weighted_score
+          top_k: 4
+          weights:
+            keyword_setting:
+              keyword_weight: 0.3
+            vector_setting:
+              embedding_model_name: bge-m3
+              embedding_provider_name: langgenius/ollama/ollama
+              vector_weight: 0.7
+        query_variable_selector: []
+        retrieval_mode: multiple
+        selected: false
+        title: 知识检索 6
+        type: knowledge-retrieval
+      height: 92
+      id: '1745898329670'
+      position:
+        x: 1377.2625233150839
+        y: 629.9481639904532
+      positionAbsolute:
+        x: 1377.2625233150839
+        y: 629.9481639904532
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        dataset_ids:
+        - alIKxFCMOnnHmnFvoy4MhovkbQV1NfQ3gZh7UzFUenyFIccFa6APBnZOgBfAnOBR
+        desc: ''
+        metadata_filtering_mode: automatic
+        metadata_model_config:
+          completion_params:
+            temperature: 0.7
+          mode: chat
+          name: qwq
+          provider: langgenius/ollama/ollama
+        multiple_retrieval_config:
+          reranking_enable: true
+          reranking_mode: weighted_score
+          top_k: 4
+          weights:
+            keyword_setting:
+              keyword_weight: 0.3
+            vector_setting:
+              embedding_model_name: bge-m3
+              embedding_provider_name: langgenius/ollama/ollama
+              vector_weight: 0.7
+        query_variable_selector: []
+        retrieval_mode: multiple
+        selected: false
+        title: 知识检索 7
+        type: knowledge-retrieval
+      height: 92
+      id: '1745898332111'
+      position:
+        x: 1377.2625233150839
+        y: 790.8414318180908
+      positionAbsolute:
+        x: 1377.2625233150839
+        y: 790.8414318180908
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        context:
+          enabled: false
+          variable_selector: []
+        desc: ''
+        model:
+          completion_params:
+            temperature: 0.7
+          mode: chat
+          name: qwq
+          provider: langgenius/ollama/ollama
+        prompt_template:
+        - id: 352852e8-7782-4943-84f0-f288049b5532
+          role: system
+          text: ''
+        selected: false
+        title: c1-1
+        type: llm
+        variables: []
+        vision:
+          enabled: false
+      height: 90
+      id: '1745898337553'
+      position:
+        x: 1768.5332548985966
+        y: -446.38359375338183
+      positionAbsolute:
+        x: 1768.5332548985966
+        y: -446.38359375338183
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        context:
+          enabled: false
+          variable_selector: []
+        desc: ''
+        model:
+          completion_params:
+            temperature: 0.7
+          mode: chat
+          name: qwq
+          provider: langgenius/ollama/ollama
+        prompt_template:
+        - id: d9f390aa-2142-446e-877f-dce1c777a391
+          role: system
+          text: ''
+        retry_config:
+          max_retries: 3
+          retry_enabled: true
+          retry_interval: 1000
+        selected: false
+        title: C2
+        type: llm
+        variables: []
+        vision:
+          enabled: false
+      height: 116
+      id: '1745898345343'
+      position:
+        x: 2115.248132641518
+        y: -43.1351044652169
+      positionAbsolute:
+        x: 2115.248132641518
+        y: -43.1351044652169
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        context:
+          enabled: false
+          variable_selector: []
+        desc: ''
+        model:
+          completion_params:
+            temperature: 0.7
+          mode: chat
+          name: qwq
+          provider: langgenius/ollama/ollama
+        prompt_template:
+        - id: 3265c25c-ecb2-45b9-8f1b-d23b76f6f639
+          role: system
+          text: ''
+        selected: false
+        title: C3
+        type: llm
+        variables: []
+        vision:
+          enabled: false
+      height: 90
+      id: '1745898348600'
+      position:
+        x: 2115.248132641518
+        y: 155.87796571322974
+      positionAbsolute:
+        x: 2115.248132641518
+        y: 155.87796571322974
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        context:
+          enabled: false
+          variable_selector: []
+        desc: ''
+        model:
+          completion_params:
+            temperature: 0.7
+          mode: chat
+          name: qwq
+          provider: langgenius/ollama/ollama
+        prompt_template:
+        - id: ebbfd00b-74f1-42f1-a994-6afa6dd1d3df
+          role: system
+          text: ''
+        selected: false
+        title: C4
+        type: llm
+        variables: []
+        vision:
+          enabled: false
+      height: 90
+      id: '1745898351150'
+      position:
+        x: 2115.248132641518
+        y: 292.9276833856176
+      positionAbsolute:
+        x: 2115.248132641518
+        y: 292.9276833856176
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        context:
+          enabled: false
+          variable_selector: []
+        desc: ''
+        model:
+          completion_params:
+            temperature: 0.7
+          mode: chat
+          name: qwq
+          provider: langgenius/ollama/ollama
+        prompt_template:
+        - id: 1f19a673-c991-423b-9c3f-e9ee43a60d41
+          role: system
+          text: ''
+        selected: false
+        title: C5
+        type: llm
+        variables: []
+        vision:
+          enabled: false
+      height: 90
+      id: '1745898353168'
+      position:
+        x: 2115.248132641518
+        y: 452.6696798589327
+      positionAbsolute:
+        x: 2115.248132641518
+        y: 452.6696798589327
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        context:
+          enabled: false
+          variable_selector: []
+        desc: ''
+        model:
+          completion_params:
+            temperature: 0.7
+          mode: chat
+          name: qwq
+          provider: langgenius/ollama/ollama
+        prompt_template:
+        - id: 396e0946-e2a8-4869-85ec-54d51467137e
+          role: system
+          text: ''
+        selected: false
+        title: C6
+        type: llm
+        variables: []
+        vision:
+          enabled: false
+      height: 90
+      id: '1745898355642'
+      position:
+        x: 2115.248132641518
+        y: 592.9601952129806
+      positionAbsolute:
+        x: 2115.248132641518
+        y: 592.9601952129806
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        context:
+          enabled: false
+          variable_selector: []
+        desc: ''
+        model:
+          completion_params:
+            temperature: 0.7
+          mode: chat
+          name: qwq
+          provider: langgenius/ollama/ollama
+        prompt_template:
+        - id: 195418e9-f835-485a-991f-7159e9796d9e
+          role: system
+          text: ''
+        selected: false
+        title: C7
+        type: llm
+        variables: []
+        vision:
+          enabled: false
+      height: 90
+      id: '1745898358606'
+      position:
+        x: 2115.248132641518
+        y: 757.3761267337109
+      positionAbsolute:
+        x: 2115.248132641518
+        y: 757.3761267337109
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        cases:
+        - case_id: 'true'
+          conditions: []
+          id: 'true'
+          logical_operator: and
+        desc: ''
+        selected: false
+        title: 条件分支
+        type: if-else
+      height: 102
+      id: '1745898573569'
+      position:
+        x: 705.5815730743851
+        y: 19.177873090025514
+      positionAbsolute:
+        x: 705.5815730743851
+        y: 19.177873090025514
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        classes:
+        - id: '1'
+          name: ''
+        - id: '2'
+          name: ''
+        desc: ''
+        instructions: ''
+        model:
+          completion_params:
+            temperature: 0.7
+          mode: chat
+          name: qwq
+          provider: langgenius/ollama/ollama
+        query_variable_selector: []
+        selected: false
+        title: 问题分类器
+        topics: []
+        type: question-classifier
+        vision:
+          enabled: false
+      height: 140
+      id: '1745917762874'
+      position:
+        x: 742.5695418518577
+        y: 242.53758046703734
+      positionAbsolute:
+        x: 742.5695418518577
+        y: 242.53758046703734
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        context:
+          enabled: false
+          variable_selector: []
+        desc: ''
+        model:
+          completion_params:
+            temperature: 0.7
+          mode: chat
+          name: qwq
+          provider: langgenius/ollama/ollama
+        prompt_template:
+        - id: 7d50a78b-fd10-49fc-abc8-d4073f8e193f
+          role: system
+          text: 对上一部分的每个章节的内容汇总成一篇综述性文献，并保证综述性文献的整体逻辑性
+        selected: false
+        title: TOTAL
+        type: llm
+        variables: []
+        vision:
+          enabled: false
+      height: 90
+      id: '1745917852328'
+      position:
+        x: 2593.9061600675036
+        y: 131.4120519201955
+      positionAbsolute:
+        x: 2593.9061600675036
+        y: 131.4120519201955
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        desc: ''
+        outputs:
+        - value_selector:
+          - '1745917852328'
+          - text
+          variable: text
+        selected: false
+        title: 结束
+        type: end
+      height: 90
+      id: '1745917875766'
+      position:
+        x: 2998.6264339317254
+        y: 131.4120519201955
+      positionAbsolute:
+        x: 2998.6264339317254
+        y: 131.4120519201955
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        context:
+          enabled: false
+          variable_selector: []
+        desc: ''
+        model:
+          completion_params:
+            temperature: 0.7
+          mode: chat
+          name: qwq
+          provider: langgenius/ollama/ollama
+        prompt_template:
+        - id: 11fa4c45-918d-4c2f-9775-5136a82732d6
+          role: system
+          text: ''
+        selected: false
+        title: c1-2
+        type: llm
+        variables: []
+        vision:
+          enabled: false
+      height: 90
+      id: '1746009970448'
+      position:
+        x: 1762.3999411739478
+        y: -322.722953471247
+      positionAbsolute:
+        x: 1762.3999411739478
+        y: -322.722953471247
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        context:
+          enabled: false
+          variable_selector: []
+        desc: ''
+        model:
+          completion_params:
+            temperature: 0.7
+          mode: chat
+          name: qwq
+          provider: langgenius/ollama/ollama
+        prompt_template:
+        - id: 6b206023-d5cd-43e8-9994-250f2326efb1
+          role: system
+          text: ''
+        selected: false
+        title: C1
+        type: llm
+        variables: []
+        vision:
+          enabled: false
+      height: 90
+      id: '1746009982242'
+      position:
+        x: 2115.248132641518
+        y: -322.722953471247
+      positionAbsolute:
+        x: 2115.248132641518
+        y: -322.722953471247
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        context:
+          enabled: false
+          variable_selector: []
+        desc: ''
+        model:
+          completion_params:
+            temperature: 0.7
+          mode: chat
+          name: qwq
+          provider: langgenius/ollama/ollama
+        prompt_template:
+        - id: 6cb71d1f-fe5e-48a4-9ac2-72dad67bbe45
+          role: system
+          text: ''
+        selected: false
+        title: c1-3
+        type: llm
+        variables: []
+        vision:
+          enabled: false
+      height: 90
+      id: '1746016021426'
+      position:
+        x: 1762.3999411739478
+        y: -193.72295347124702
+      positionAbsolute:
+        x: 1762.3999411739478
+        y: -193.72295347124702
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        author: lanqi7777777
+        desc: ''
+        height: 570
+        selected: false
+        showAuthor: true
+        text: '{"root":{"children":[{"children":[{"detail":0,"format":0,"mode":"normal","style":"","text":"大体题目：","type":"text","version":1}],"direction":"ltr","format":"","indent":0,"type":"paragraph","version":1,"textFormat":0,"textStyle":""},{"children":[{"detail":0,"format":0,"mode":"normal","style":"","text":"XXX大模型知识库：海洋应用数据综述以及深度学习方法构建指导（guidance）","type":"text","version":1}],"direction":"ltr","format":"","indent":0,"type":"paragraph","version":1,"textFormat":0,"textStyle":""},{"children":[],"direction":null,"format":"","indent":0,"type":"paragraph","version":1,"textFormat":0,"textStyle":""},{"children":[{"detail":0,"format":0,"mode":"normal","style":"","text":"Introduction部分大体逻辑：","type":"text","version":1}],"direction":"ltr","format":"","indent":0,"type":"paragraph","version":1,"textFormat":0,"textStyle":""},{"children":[{"detail":0,"format":0,"mode":"normal","style":"","text":"（1）工作内容方面：海洋应用数据是研究海洋的基础内容，深度学习方法重要有效的工具，（具体列一下相关领域应用），我们这个综述论文就是这样做海洋应用数据综述以及深度学习方法构建指导工作，目前没有这种综述；","type":"text","version":1}],"direction":"ltr","format":"","indent":0,"type":"paragraph","version":1,"textFormat":0,"textStyle":""},{"children":[{"detail":0,"format":0,"mode":"normal","style":"","text":"（2）新的综述类工作思路和方法：以往综述论文都是某个领域里大量文献，文字性归纳总结。随着大模型的快速发展，大模型Agent智能体与知识库为综述类工作提供了新的构建方法，展开介绍，...，...。我们的工作就用大模型知识库构建的方式来做综述，既能提供传统综述文字归纳总结方面的功能，又能提供一种如何利用文献和材料构建大模型知识库的研究和方法构建体系，能对所研究的“海洋应用数据综述以及深度学习方法构建”提供综述文章和知识库工具，也能为其他领域读者提供一种新的领域综述文章和知识库构建的方法体系。创新性和应用型均很强；","type":"text","version":1}],"direction":"ltr","format":"","indent":0,"type":"paragraph","version":1,"textFormat":0,"textStyle":""},{"children":[{"detail":0,"format":0,"mode":"normal","style":"","text":"（3）本文要做的XXX大模型知识库。利用XXX新技术，采用XXXX文献以及网址数据，通过XXXX标签标注方法等，建立知识库体系，为海洋应用数据综述以及深度学习方法构建提供资料和工具，并且开放文献和知识库工具。方法新，工作新，工具有效实用。","type":"text","version":1}],"direction":"ltr","format":"","indent":0,"type":"paragraph","version":1,"textFormat":0,"textStyle":""},{"children":[{"detail":0,"format":0,"mode":"normal","style":"","text":"最后，归纳总结要点写出上面三条contribution。","type":"text","version":1}],"direction":"ltr","format":"","indent":0,"type":"paragraph","version":1,"textFormat":0,"textStyle":""},{"children":[],"direction":null,"format":"","indent":0,"type":"paragraph","version":1,"textFormat":0,"textStyle":""},{"children":[{"detail":0,"format":0,"mode":"normal","style":"","text":"综述内容大体框架：","type":"text","version":1}],"direction":"ltr","format":"","indent":0,"type":"paragraph","version":1,"textFormat":0,"textStyle":""},{"children":[{"detail":0,"format":0,"mode":"normal","style":"","text":"（1）海洋应用数据有哪些，按学科研究领域来划分；","type":"text","version":1}],"direction":"ltr","format":"","indent":0,"type":"paragraph","version":1,"textFormat":0,"textStyle":""},{"children":[{"detail":0,"format":0,"mode":"normal","style":"","text":"（2）深度学习方法应用的有哪些，直接就（1）中数据进行对应阐述介绍；","type":"text","version":1}],"direction":"ltr","format":"","indent":0,"type":"paragraph","version":1,"textFormat":0,"textStyle":""},{"children":[{"detail":0,"format":0,"mode":"normal","style":"","text":"（3）从数据科学和深度学习方法两方面综合来看，这些数据怎样划分：按模态、按维度（一维、二维、三维...），按数据内容（数据体量、标签，复杂度），按深度学习任务（比如识别、检测、预测等...），以及其他方面；","type":"text","version":1}],"direction":"ltr","format":"","indent":0,"type":"paragraph","version":1,"textFormat":0,"textStyle":""},{"children":[{"detail":0,"format":0,"mode":"normal","style":"","text":"（4）对当前最新深度学习方法模型做个综述介绍，并针对（3）具体的划分方式，对应给出方法构建指导。","type":"text","version":1}],"direction":"ltr","format":"","indent":0,"type":"paragraph","version":1,"textFormat":0,"textStyle":""},{"children":[],"direction":null,"format":"","indent":0,"type":"paragraph","version":1,"textFormat":0,"textStyle":""},{"children":[{"detail":0,"format":0,"mode":"normal","style":"","text":"大模型知识库大体框架：","type":"text","version":1}],"direction":"ltr","format":"","indent":0,"type":"paragraph","version":1,"textFormat":0,"textStyle":""},{"children":[{"detail":0,"format":0,"mode":"normal","style":"","text":"（1）如何构建的知识库；","type":"text","version":1}],"direction":"ltr","format":"","indent":0,"type":"paragraph","version":1,"textFormat":0,"textStyle":""},{"children":[{"detail":0,"format":0,"mode":"normal","style":"","text":"（2）如何构建的智能体Agent；","type":"text","version":1}],"direction":"ltr","format":"","indent":0,"type":"paragraph","version":1,"textFormat":0,"textStyle":""},{"children":[{"detail":0,"format":0,"mode":"normal","style":"","text":"（3）所构建知识库与当前开源大模型在垂直领域知识方面的优势，并展示问答效果（这个可参考一些LLM或MLLMs工作，看他们如何和GPT来做对比的）；","type":"text","version":1}],"direction":"ltr","format":"","indent":0,"type":"paragraph","version":1,"textFormat":0,"textStyle":""},{"children":[{"detail":0,"format":0,"mode":"normal","style":"","text":"（4）所构建的智能体Agent比起通用的大模型（比如DeepSeek、Qwen等）在面向垂直领域推理能力方面的优势；","type":"text","version":1}],"direction":"ltr","format":"","indent":0,"type":"paragraph","version":1,"textFormat":0,"textStyle":""},{"children":[{"detail":0,"format":0,"mode":"normal","style":"","text":"（5）展示利用所构建的大模型知识库，来辅助写这篇综述文章内容的问答生成效果，体现出从一般到好的效果，既构建了大模型知识库，又辅助写了这篇综述，体现利用AI大模型工具的有效性和实用性。","type":"text","version":1}],"direction":"ltr","format":"","indent":0,"type":"paragraph","version":1,"textFormat":0,"textStyle":""},{"children":[],"direction":null,"format":"","indent":0,"type":"paragraph","version":1,"textFormat":0,"textStyle":""},{"children":[{"detail":0,"format":0,"mode":"normal","style":"","text":"最后写结论","type":"text","version":1}],"direction":"ltr","format":"","indent":0,"type":"paragraph","version":1,"textFormat":0,"textStyle":""},{"children":[],"direction":null,"format":"","indent":0,"type":"paragraph","version":1,"textFormat":0,"textStyle":""}],"direction":"ltr","format":"","indent":0,"type":"root","version":1}}'
+        theme: blue
+        title: ''
+        type: ''
+        width: 1078
+      height: 570
+      id: '1746675901529'
+      position:
+        x: 153.8432787865159
+        y: -984.5831167050234
+      positionAbsolute:
+        x: 153.8432787865159
+        y: -984.5831167050234
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom-note
+      width: 1078
+    viewport:
+      x: -343.27714586844763
+      y: 220.891956871069
+      zoom: 0.6358095518109916
