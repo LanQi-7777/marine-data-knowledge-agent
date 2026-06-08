@@ -313,18 +313,3 @@ Email: [zhenghaiyong@ouc.edu.cn](mailto:zhenghaiyong@ouc.edu.cn)
 **Zhensheng Shi**
 
 Email: [zhenshengshi@gmail.com](mailto:zhenshengshi@gmail.com)
-
-
-
-## Acknowledgements
-
-
-
-We acknowledge the developers, maintainers, institutions, and data providers of the marine data products, repositories, infrastructures, and open-source tools reviewed or used in this work.
-
-
-
-Users should cite the original data providers, repositories, software projects, and data papers when using their resources.
-
-
-
