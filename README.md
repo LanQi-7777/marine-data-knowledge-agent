@@ -1,4 +1,4 @@
-# Agent-assisted Marine Data Knowledge Base
+# Agent-assisted Marine Data Knowledge Framework
 
 This repository provides the prototype implementation of an agent-assisted knowledge framework for multidisciplinary marine data discovery, evidence retrieval, dataset comparison, and reuse-oriented decision support.
 
