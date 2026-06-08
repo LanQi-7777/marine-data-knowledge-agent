@@ -31,9 +31,21 @@ API keys, proprietary model weights, private credentials, and third-party copyri
 ## Availability
 
 * GitHub repository: https://github.com/LanQi-7777/marine-data-knowledge-agent
-* Zenodo archive: to be added after the GitHub release is archived
 
 
 ## Contact
 
-For questions about the manuscript or this repository, please contact the corresponding authors listed in the manuscript.
+For technical questions about this repository, workflow files, prompt templates, or catalog structure, please open a GitHub issue.
+
+For repository maintenance or implementation-related questions, please contact:
+
+**Yuqi Shao**  
+Email: [shaoyuqi@stu.ouc.edu.cn]
+
+For academic questions about the related manuscript, please contact the corresponding authors:
+
+**Haiyong Zheng**  
+Email: zhenghaiyong@ouc.edu.cn
+
+**Zhensheng Shi**  
+Email: zhenshengshi@gmail.com
